@@ -16,6 +16,8 @@ mpicc -DUSE_MPI -I${mkLisInc} -L${mkLisLib} -llis test1.c -o test1
 ### Step 3. Solve the linear systems
 We want to solve a generic linear system Ax=b
 
+
+
 To solve the linear system we use the previewsly compiled program called "test1".
 Test1 is able to solve any linear system using different methods. The methods available are:
 * jacobi
@@ -25,4 +27,8 @@ Test1 is able to solve any linear system using different methods. The methods av
 * bicgstab
 * gmres
 * ...
-We are also able to set some parameters such as 
+To set a method we add a flag ``` -i method_name ```  where method_name is one of the previewsly mentioned methods. If exist, the name between brakets must be used.
+
+Moreover, we are able to set the parameters of the methods. We can modify 
+
+  
