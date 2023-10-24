@@ -60,7 +60,10 @@ Moreover, we are able to set the parameters of the methods. In particular we can
 * ``` -p jacobi ``` to set jacobi as a preconditioner ?
 
 For instance: 
-```mpirun -n NUMBER_OF_PROCESSES ./test1  A.mtx b.mtx sol.txt hist.txt -i bicgstab -maxiter 100 ```
+
+```
+mpirun -n 4 ./test1  A.mtx b.mtx sol.txt hist.txt -i bicgstab -maxiter 100
+ ```
 
 
   
