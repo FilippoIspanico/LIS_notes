@@ -37,9 +37,7 @@ Where sol.txt and hist.txt are two file were the program will store the data abo
 I believe that if we want to solve the problem with b vector begin the vectors of ones( or twos...) then instead of using a matrix format file just use 1 (2...) in the call
 
 
-
-
-> The methods available are:
+**The methods available are:**
 * jacobi
 * gauss-sidel (gs)
 * conjugate gradient (cg)
@@ -58,10 +56,10 @@ mpirun -n 4 ./test1 A.mtx b.mtx sol.txt hist.txt -i method_name
 The default method is 
 
 Moreover, we are able to set the parameters of the methods. In particular we can add the following parameters: 
-> * ``` -tol 1.0e-14 ``` to set the tollerance of the method to 10^-14
-> * ``` -maxiter 100 ``` to set the max # of iteration to 100
-> * ``` -restart 20 ``` what is restart?    
-> * ``` -p jacobi ``` to set jacobi as a preconditioner ?
+* ``` -tol 1.0e-14 ``` to set the tollerance of the method to 10^-14
+* ``` -maxiter 100 ``` to set the max # of iteration to 100
+* ``` -restart 20 ``` what is restart?    
+* ``` -p jacobi ``` to set jacobi as a preconditioner ?
 
 For instance: 
 
