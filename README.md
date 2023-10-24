@@ -65,5 +65,6 @@ For instance:
 mpirun -n 4 ./test1  A.mtx b.mtx sol.txt hist.txt -i bicgstab -maxiter 100
  ```
 
+### Lis to solve eigenvalues problem
 
   
