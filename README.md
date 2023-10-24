@@ -5,7 +5,7 @@
 
 Move to the Lis folder and load the modules
 
-```
+```shell
 cd lis-2.0.34/test/
 source /u/sw/etc/bash.bashrc && module load gcc-glibc eigen && module load lis && module list
 ```
