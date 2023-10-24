@@ -1,3 +1,5 @@
+
+
 # LIS_notes
 ## Using LIS program to solve linear systems!
 
@@ -32,9 +34,7 @@ If ``` A.mtx ``` and ``` b.mtx ``` are the parameters of the linear system then 
 ```bash
 mpirun -n NUMBER_OF_PROCESSES ./test1  A.mtx b.mtx sol.txt hist.txt
 ``` 
-
-Where sol.txt and hist.txt are two file were the program will store the data about the solution. 
-I believe that if we want to solve the problem with b vector begin the vectors of ones( or twos...) then instead of using a matrix format file just use 1 (2...) in the call
+Where sol.txt and hist.txt are two file were the program will store the data about the solution. Instead of using a file for the rhs b, it is possible to use some default options by using the values 0, 1, 2. see the photo below for details. 
 
 
 **The methods available are:**
@@ -44,7 +44,7 @@ I believe that if we want to solve the problem with b vector begin the vectors o
 * bicg
 * bicgstab
 * gmres
-* ...
+* ...?
 
 
 To set a method we add a flag ``` -i method_name ```  where method_name is one of the previewsly mentioned methods. If exist, the name between brakets must be used. The call becomes
@@ -66,6 +66,10 @@ For instance:
 ```bash
 mpirun -n 4 ./test1  A.mtx b.mtx sol.txt hist.txt -i bicgstab -maxiter 100
  ```
+
+
+![Screenshot from 2023-10-24 21-07-41](https://github.com/FilippoIspanico/LIS_notes/assets/133004373/dc65f2eb-0c24-45c7-ac63-7f59715dda68)
+
 
 ### Lis to solve eigenvalues problem
 
