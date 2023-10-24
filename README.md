@@ -5,7 +5,7 @@
 
 Move to the Lis folder and load the modules
 
-```shell
+```bash
 cd lis-2.0.34/test/
 source /u/sw/etc/bash.bashrc && module load gcc-glibc eigen && module load lis && module list
 ```
@@ -37,7 +37,7 @@ I believe that if we want to solve the problem with b vector begin the vectors o
 
 
 
-The methods available are:
+>The methods available are:
 * jacobi
 * gauss-sidel (gs)
 * conjugate gradient (cg)
