@@ -29,7 +29,9 @@ To solve any linear system test1 must be able to take as input any matrix A and 
 If ``` A.mtx ``` and ``` b.mtx ``` are the parameters of the linear system then the call to test1 becomes
 
 
-``` mpirun -n NUMBER_OF_PROCESSES ./test1  A.mtx b.mtx sol.txt hist.txt``` 
+```bash
+mpirun -n NUMBER_OF_PROCESSES ./test1  A.mtx b.mtx sol.txt hist.txt
+``` 
 
 Where sol.txt and hist.txt are two file were the program will store the data about the solution. 
 I believe that if we want to solve the problem with b vector begin the vectors of ones( or twos...) then instead of using a matrix format file just use 1 (2...) in the call
@@ -37,7 +39,7 @@ I believe that if we want to solve the problem with b vector begin the vectors o
 
 
 
->The methods available are:
+> The methods available are:
 * jacobi
 * gauss-sidel (gs)
 * conjugate gradient (cg)
@@ -49,7 +51,9 @@ I believe that if we want to solve the problem with b vector begin the vectors o
 
 To set a method we add a flag ``` -i method_name ```  where method_name is one of the previewsly mentioned methods. If exist, the name between brakets must be used. The call becomes
 
-``` mpirun -n 4 ./test1 A.mtx b.mtx sol.txt hist.txt -i method_name ```
+```bash
+mpirun -n 4 ./test1 A.mtx b.mtx sol.txt hist.txt -i method_name
+```
 
 The default method is 
 
@@ -61,7 +65,7 @@ Moreover, we are able to set the parameters of the methods. In particular we can
 
 For instance: 
 
-```
+```bash
 mpirun -n 4 ./test1  A.mtx b.mtx sol.txt hist.txt -i bicgstab -maxiter 100
  ```
 
