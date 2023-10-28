@@ -38,13 +38,8 @@ Where sol.txt and hist.txt are two file were the program will store the data abo
 
 
 **The methods available are:**
-* jacobi
-* gauss-sidel (gs)
-* conjugate gradient (cg)
-* bicg
-* bicgstab
-* gmres
-* ...?
+![Screenshot from 2023-10-28 16-40-11](https://github.com/FilippoIspanico/LIS_notes/assets/133004373/30583763-bf20-4664-a751-dd810cb43731)
+
 
 
 To set a method we add a flag ``` -i method_name ```  where method_name is one of the previewsly mentioned methods. If exist, the name between brakets must be used. The call becomes
