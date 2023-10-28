@@ -48,7 +48,7 @@ To set a method we add a flag ``` -i method_name ```  where method_name is one o
 mpirun -n 4 ./test1 A.mtx b.mtx sol.txt hist.txt -i method_name
 ```
 
-The default method is bcg
+The default method is bicg
 
 Moreover, we are able to set the parameters of the methods. In particular we can add the following parameters: 
 * ``` -tol 1.0e-14 ``` to set the tollerance of the method to 10^-14
