@@ -72,4 +72,5 @@ mpirun -n 4 ./test1  A.mtx b.mtx sol.txt hist.txt -i bicgstab -maxiter 100
 
 ### Lis to solve eigenvalues problem
 
-  
+ ![Screenshot from 2023-10-28 16-44-43](https://github.com/FilippoIspanico/LIS_notes/assets/133004373/a793c316-22a4-4282-b0cc-99a79b714eb7)
+
